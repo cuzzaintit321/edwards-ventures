@@ -1,3 +1,5 @@
+![Edwards Ventures Cover](cover-photo.png)
+
 # Edwards Ventures (working name)
 
 A **prototype venture-studio website** and portfolio for independently developed business software. This is a software artifact, not proof of an incorporated company or paying customers.
