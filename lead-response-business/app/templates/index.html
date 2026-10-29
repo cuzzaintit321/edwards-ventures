@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Lead response automation for small service businesses."><title>Lead Response System | {{business}}</title><link rel="stylesheet" href="/static/style.css"></head><body><header class="nav"><a href="http://localhost:8140/" class="brand">EV<span>.</span> <small>{{business}}</small></a><nav><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#contact" class="navbtn">Request a pilot ↗</a></nav></header><main><section class="hero"><div><p class="eyebrow">BUSINESS AUTOMATION · HUMAN-REVIEWED</p><h1>Never lose track<br>of a <em>new lead.</em></h1><p class="lead">One simple place to capture customer inquiries, prepare professional draft responses, and manage follow-ups—without losing the human touch.</p><div class="buttons"><a class="btn" href="#contact">Request your pilot ↗</a><a href="#how" class="outline">See how it works ↓</a></div><div class="trust">Designed for contractors, maintenance companies, and service businesses.</div></div><div class="demo"><div class="demotop"><span>LEAD INBOX / DEMONSTRATION</span><span class="live">● Review before sending</span></div><div class="demoentry"><small>01 / NEW REQUEST</small><b>Need a quote for a service appointment</b><p>New customer inquiry captured and organized.</p></div><div class="arrow">↓</div><div class="demoentry active"><small>02 / SUGGESTED RESPONSE</small><b>Professional draft ready for review</b><p>Confirm details, approve the wording, and reply using your preferred channel.</p></div><div class="arrow">↓</div><div class="demoentry"><small>03 / FOLLOW-UP</small><b>Status: Contacted</b><p>Keep the next action visible to your team.</p></div></div></section><section class="section" id="how"><p class="eyebrow">HOW IT WORKS</p><h2>From inquiry to <em>next step.</em></h2><div class="three"><article><span>01</span><h3>Capture</h3><p>Customers submit requests through a mobile-friendly intake form.</p></article><article><span>02</span><h3>Prepare</h3><p>The system creates a draft for a person to review. The base demo uses templates, not a live AI model.</p></article><article><span>03</span><h3>Track</h3><p>Use a private dashboard to update inquiry status and manage follow-ups.</p></article></div></section><section class="section dark" id="pricing"><p class="eyebrow">START WITH A PILOT</p><h2>A small first step.<br><em>A clearer workflow.</em></h2><div class="pricing"><div><small>ONE-TIME PILOT SETUP</small><strong>$300</strong><p>Intake form configuration, dashboard setup, deployment, and a walkthrough.</p></div><div><small>30-DAY SUPPORT</small><strong>$75</strong><p>Basic adjustments, issue review, and support during the initial trial period.</p></div></div><p class="disclaimer">Pilot pricing is an introductory proposal subject to written scope and agreement. No payment processing or customer emails are automated in this prototype.</p></section><section class="section contact" id="contact"><div><p class="eyebrow">TELL US WHAT YOU NEED</p><h2>Ready to capture<br><em>better leads?</em></h2><p>Share your business needs and we'll discuss whether this pilot fits.</p></div><form action="/inquire" method="post" class="form"><label>Your name<input name="name" required minlength="2" maxlength="100" placeholder="Your name"></label><label>Business email<input type="email" name="email" required maxlength="150" placeholder="you@business.com"></label><label>Company<input name="company" maxlength="120" placeholder="Business name (optional)"></label><label>What are you interested in?<select name="service"><option>Lead Response Setup</option><option>Workflow Consultation</option><option>Other</option></select></label><label>Tell us about your needs<textarea name="message" required minlength="10" maxlength="3000" rows="5" placeholder="What happens when a new customer contacts you?"></textarea></label><label class="honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label><button type="submit" class="btn">Submit inquiry ↗</button><small>Information is stored for follow-up. Don't include confidential details.</small></form></section>
+
+<section class="purchase-section" id="purchase">
+  <div class="purchase-wrap">
+    <div class="purchase-copy">
+      <p class="purchase-eyebrow">GET STARTED</p>
+      <h2>Ready to automate your leads?</h2>
+      <p class="purchase-text">
+        Launch your Lead Response System with a guided setup,
+        workflow configuration, and 30 days of initial support.
+      </p>
+
+      <ul class="purchase-features">
+        <li>Customer inquiry capture</li>
+        <li>Lead tracking dashboard</li>
+        <li>Draft response generation</li>
+        <li>30 days of support included</li>
+      </ul>
+    </div>
+
+    <div class="purchase-card">
+      <p class="purchase-card-label">LEAD RESPONSE PILOT</p>
+
+      <div class="purchase-line">
+        <span>One-time setup</span>
+        <strong>$300</strong>
+      </div>
+
+      <div class="purchase-line">
+        <span>30-day support</span>
+        <strong>$75</strong>
+      </div>
+
+      <div class="purchase-total">
+        <span>Total</span>
+        <strong>$375</strong>
+      </div>
+
+      <a href="http://localhost:8140/checkout" class="purchase-button">
+        Purchase Lead Response System ↗
+      </a>
+
+      <p class="purchase-note">
+        Secure checkout powered by Stripe. No automatic subscription renewal.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main><footer><span>© 2026 {{business}} · Lead Response Pilot</span><span>Functional prototype · Replies require human approval</span></footer></body></html>

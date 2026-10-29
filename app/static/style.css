@@ -1,0 +1,123 @@
+:root{--dark:#152b29;--forest:#244e43;--lime:#b8eb86;--paper:#f4f5ed;--muted:#5c7069;--line:#d4ddd2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--paper);color:var(--dark);line-height:1.55}a{text-decoration:none;color:inherit}.nav{padding:24px max(5vw,22px);display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line)}.logo{font-size:25px;font-weight:900}.logo span{color:#79ad58}.logo small{font-size:12px;letter-spacing:.14em;margin-left:15px}.nav nav{display:flex;gap:24px;font-size:13px;font-weight:750}.hero{padding:110px max(5vw,22px) 50px;background:radial-gradient(circle at 88% 30%,#dceec8 0%,transparent 35%)}.eyebrow{font-size:12px;font-weight:850;letter-spacing:.17em;margin-bottom:23px}.hero h1{font-size:clamp(3.6rem,8vw,8.5rem);line-height:1.02;letter-spacing:-.065em;max-width:1100px;margin:0 0 30px}.hero em{color:#668f45;font-style:normal}.hero p{font-size:21px;max-width:650px;color:var(--muted)}.button{display:inline-block;border-radius:999px;padding:15px 25px;background:var(--dark);color:white;font-weight:750;margin-top:20px}.metrics{display:flex;flex-wrap:wrap;gap:55px;border-top:1px solid var(--line);margin-top:100px;padding-top:30px}.metrics div{display:grid;gap:4px}.metrics strong{font-size:27px}.metrics span{font-size:12px;color:var(--muted)}.section{padding:95px max(5vw,22px)}.section h2{font-size:clamp(2.6rem,5vw,5.5rem);letter-spacing:-.055em;line-height:1.08;margin:0 0 20px}.intro{color:var(--muted);margin-bottom:35px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{padding:38px;border:1px solid var(--line);border-radius:20px;background:#fff}.card-top{display:flex;justify-content:space-between;gap:10px;font-size:11px;text-transform:uppercase;font-weight:850;letter-spacing:.12em;color:var(--muted)}.status{background:#edf2dd;color:#54783f;border-radius:999px;padding:5px 12px}.card h3{font-size:28px;letter-spacing:-.03em}.card p{min-height:75px;color:var(--muted)}.card a{font-weight:800;border-bottom:1px solid var(--dark)}.dark{background:var(--dark);color:white}.dark .eyebrow{color:var(--lime)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}.steps article{border-top:1px solid #56726b;padding-top:20px}.steps span{color:var(--lime);font-weight:800}.steps h3{font-size:24px}.steps p{color:#c3d3cd}.next p{max-width:780px;font-size:20px;color:var(--muted)}.next .note{font-size:13px;margin-top:30px}footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--dark);color:#c5d4ce;padding:28px max(5vw,22px);font-size:12px}@media(max-width:700px){.nav nav{gap:12px;font-size:11px}.logo small{display:none}.hero{padding-top:75px}.metrics{margin-top:65px;gap:25px}.cards,.steps{grid-template-columns:1fr}.section{padding-top:75px;padding-bottom:75px}}
+
+/* Edwards Ventures hero image */
+.hero {
+    position: relative;
+    padding-right: 48%;
+    min-height: 850px;
+}
+
+.ventures-hero-photo {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 40%;
+    height: 65%;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.12);
+}
+
+.ventures-hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 950px) {
+    .hero {
+        padding-right: 24px;
+        min-height: auto;
+    }
+
+    .ventures-hero-photo {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 320px;
+        margin-top: 35px;
+    }
+}
+
+/* Command Center navigation button */
+.command-link {
+    display: inline-block;
+    background: #1b302b;
+    color: #ffffff;
+    padding: 11px 19px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .2s ease;
+}
+
+.command-link:hover {
+    background: #628e48;
+    color: #ffffff;
+}
+
+/* Featured Lead Response Product */
+.lead-product-section {
+    padding: 95px 5%;
+    background: #e8efdc;
+    color: #1b302b;
+}
+
+.lead-product-copy {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lead-product-section h2 {
+    font-size: clamp(42px, 5vw, 76px);
+    line-height: 1.1;
+    margin: 20px 0 25px;
+}
+
+.lead-product-section h2 em {
+    color: #628e48;
+    font-style: normal;
+}
+
+.lead-product-copy > p:not(.eyebrow) {
+    color: #5b7066;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.lead-product-pricing {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.lead-product-pricing span {
+    display: flex;
+    flex-direction: column;
+}
+
+.lead-product-pricing strong {
+    font-size: 34px;
+}
+
+.lead-product-button {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 40px;
+    background: #1b302b;
+    color: white;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.lead-product-button:hover {
+    background: #628e48;
+    color: white;
+}
