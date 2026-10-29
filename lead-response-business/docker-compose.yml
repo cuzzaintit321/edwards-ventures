@@ -1,0 +1,13 @@
+services:
+  leads:
+    build: .
+    env_file: .env
+    ports:
+      - "127.0.0.1:8150:8000"
+    volumes:
+      - lead_data:/data
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  lead_data:

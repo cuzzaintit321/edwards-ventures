@@ -1,0 +1,38 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Databases and customer data
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+*.sqlite3-*
+*.db-*
+*.db-journal
+*.db-wal
+*.db-shm
+data/
+**/data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Backups and archives
+*.zip
+*.tar
+*.tar.gz
+*.backup
+*.bak
+*.before-*
+*.logo-backup
+*.db-backup
